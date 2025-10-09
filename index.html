@@ -8,54 +8,49 @@
   <meta name="theme-color" content="#1E4D8C" />
   <style>
     :root{
-      --azul:#1E4D8C; --gris:#222; --gris-claro:#E8EBF1; --bg:#fff; --max:1100px;
+      --azul:#1E4D8C; --gris:#222; --bg:#fff; --max:1100px;
       --shadow:0 8px 26px rgba(0,0,0,.08); --radius:16px;
     }
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--gris);background:var(--bg);line-height:1.55;font-size:17px}
     a{color:var(--azul);text-decoration:none}
     img{max-width:100%;height:auto;display:block}
     .img-soft{border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #eef1f6;background:#f4f6f9}
+
     header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eef1f6;z-index:50}
     .nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
-    .brand{display:flex;gap:12px;align-items:center}
     .brand img{height:42px;width:auto;object-fit:contain}
     .menu{display:flex;gap:18px;align-items:center}
-    .menu a{font-weight:650;color:#10223d}
+
     .btn{display:inline-block;background:var(--azul);color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;box-shadow:var(--shadow)}
     .pill{display:inline-block;background:#eef4ff;color:var(--azul);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:.2px}
-    .hero{background:#fff;padding:32px 18px}
+
     .wrap{max-width:var(--max);margin:auto}
+    .hero{background:#fff;padding:32px 18px}
     .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:center}
-    .hero h1{position:absolute;left:-9999px}
-    .hero h2{font-size:44px;line-height:1.08;margin:10px 0 10px;letter-spacing:-.5px;color:#0b2d63}
+    .hero h2{font-size:44px;line-height:1.08;margin:10px 0;letter-spacing:-.5px;color:#0b2d63}
     .hero p{font-size:18px;margin:0 0 16px;color:#2b3551}
+
     .card{background:#fff;border:1px solid #eef1f6;border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
-    .hero-media{margin:0}
-    .hero-media img{width:100%;aspect-ratio:16/10;object-fit:cover}
     section{padding:36px 18px}
-    h3{margin:0 0 10px;font-size:28px;color:#0b2d63;letter-spacing:-.2px}
+    h3{margin:0 0 10px;font-size:28px;color:#0b2d63}
     h4{margin:0 0 6px;font-size:20px;color:#10223d}
     .grid{display:grid;gap:16px}
     .grid-3{grid-template-columns:repeat(3,1fr)}
     .grid-2{grid-template-columns:repeat(2,1fr)}
-    .feat{display:flex;gap:12px;align-items:flex-start}
-    .ico{width:40px;height:40px;border-radius:12px;background:#eef4ff;display:grid;place-items:center;color:var(--azul);font-weight:900}
     ul{margin:10px 0 0 18px}
     .small{font-size:14px;color:#4c5670}
+
     .cta{background:linear-gradient(180deg,#f7faff,#eef4ff)}
+    .cta-single{max-width:var(--max);margin:auto;display:block}
     footer{background:#0d1c34;color:#e8eef8}
     footer .wrap{display:grid;gap:8px;padding:20px 18px}
-    .cta-box{display:grid;gap:16px;grid-template-columns:1.2fr .8fr;align-items:center}
-    .qr{aspect-ratio:1;background:#fff;border-radius:12px;border:1px solid #eaeaea}
+
     @media (max-width:980px){
       body{font-size:16.5px}
-      .hero-grid,.grid-3,.grid-2,.cta-box{grid-template-columns:1fr}
+      .hero-grid,.grid-3,.grid-2{grid-template-columns:1fr}
       .menu{display:none}
       .hero h2{font-size:36px}
-      section{padding:28px 16px}
-      .card{padding:16px}
     }
   </style>
 </head>
@@ -64,9 +59,8 @@
 <header>
   <div class="nav">
     <div class="brand">
-      <!-- LOGO SOLO (sin texto al lado) -->
-      <img src="logo-processap.jpg" alt="Processap logo"
-           onerror="this.onerror=null;this.src='logo-processap';" />
+      <!-- Logo solo -->
+      <img src="logo-processap.jpg?v=2" alt="Processap logo" />
     </div>
     <nav class="menu" aria-label="Principal">
       <a href="#que-hacemos">Qué hacemos</a>
@@ -79,21 +73,19 @@
 
 <main>
   <!-- HERO -->
-  <section class="hero" aria-labelledby="hero-title">
+  <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1 id="hero-title">Processap</h1>
         <span class="pill">Tu partner en automatización</span>
         <h2>Automatización industrial y robótica para hoteles y comercios</h2>
         <p>Eficiencia, innovación y servicio las 24 horas. Integración real de robots de servicio y limpieza con soporte local.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn" href="#contacto">Solicitar demostración</a>
+          <a class="btn" href="#contacto">Solicitar estudio gratuito</a>
           <a class="pill" href="robots.html">Ver robots</a>
         </div>
       </div>
-      <!-- IMAGEN HERO (fondo gris/neutral) -->
-      <figure class="hero-media">
-        <img class="img-soft" src="robot-hero.jpg" alt="Robot de servicio en entorno hotelero" />
+      <figure>
+        <img class="img-soft" src="robot-hero.jpg?v=2" alt="Robot en entorno hotelero" />
       </figure>
     </div>
   </section>
@@ -104,46 +96,20 @@
       <div class="card">
         <h3>Qué hacemos</h3>
         <p>Diseñamos e integramos <strong>automatización industrial</strong> y <strong>robótica aplicada</strong> a hoteles, restaurantes, supermercados y grandes superficies.</p>
-        <div class="grid grid-2" style="margin-top:8px">
-          <div class="feat">
-            <div class="ico">⚙️</div>
-            <div>
-              <h4>Automatización industrial</h4>
-              <p class="small">PLCs, robots, sensórica, HMI/SCADA e integración de líneas.</p>
-            </div>
-          </div>
-          <div class="feat">
-            <div class="ico">🤖</div>
-            <div>
-              <h4>Robótica para hoteles y retail</h4>
-              <p class="small">Room service, runners, guía/recepción y limpieza autónoma.</p>
-            </div>
-          </div>
-          <div class="feat">
-            <div class="ico">🧩</div>
-            <div>
-              <h4>Integración llave en mano</h4>
-              <p class="small">Estudio, instalación, configuración y formación a tu equipo.</p>
-            </div>
-          </div>
-          <div class="feat">
-            <div class="ico">🛠️</div>
-            <div>
-              <h4>Soporte local</h4>
-              <p class="small">Mantenimiento y asistencia técnica cercana y ágil.</p>
-            </div>
-          </div>
-        </div>
+        <ul>
+          <li>Automatización de procesos con PLCs, sensores y SCADA.</li>
+          <li>Integración de robots de servicio y limpieza autónoma.</li>
+          <li>Soluciones llave en mano con soporte local.</li>
+        </ul>
       </div>
-      <div class="card" style="background:linear-gradient(180deg,#f9fbff,#fff)">
+      <div class="card">
         <h3>Valor para tu negocio</h3>
         <ul>
-          <li>Reducción de costes operativos y tiempos de servicio.</li>
-          <li>Disponibilidad 24/7 con calidad constante.</li>
-          <li>Imagen moderna que sorprende al cliente.</li>
-          <li>Integración con ascensores, cerraduras y sistemas internos.</li>
+          <li>Reducción de costes y tiempos de servicio.</li>
+          <li>Disponibilidad 24/7 y mejora de experiencia del cliente.</li>
+          <li>Imagen moderna que atrae nuevos huéspedes.</li>
         </ul>
-        <p class="small" style="margin-top:8px">La robótica no sustituye la hospitalidad, <strong>la eleva</strong>.</p>
+        <p class="small">La robótica no sustituye la hospitalidad, <strong>la eleva</strong>.</p>
       </div>
     </div>
   </section>
@@ -151,39 +117,36 @@
   <!-- SECTORES -->
   <section id="sectores">
     <div class="wrap">
-      <h3 style="margin-bottom:12px">Sectores</h3>
+      <h3>Sectores</h3>
       <div class="grid grid-3">
         <div class="card">
           <h4>Industria</h4>
-          <p>Automatización de procesos, control, trazabilidad y mantenimiento predictivo.</p>
+          <p>Automatización de procesos, control y mantenimiento predictivo.</p>
         </div>
         <div class="card">
           <h4>Hoteles y Restauración</h4>
-          <p>Room service autónomo, runners, guía/recepción e integración con operaciones nocturnas.</p>
+          <p>Room service autónomo, runners, guía/recepción e integración con ascensores.</p>
         </div>
         <div class="card">
-          <h4>Retail y Grandes Superficies</h4>
-          <p>Robots de limpieza y soporte logístico que trabajan incluso a oscuras para <strong>ahorrar energía</strong>.</p>
+          <h4>Retail y Superficies</h4>
+          <p>Robots de limpieza y apoyo logístico, incluso en modo nocturno sin luz.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- CONTACTO (sin recuadro inútil, con datos debajo) -->
   <section id="contacto" class="cta">
-    <div class="wrap card cta-box">
-      <div>
-        <h3>Solicita una demostración</h3>
-        <p>Analizamos tu entorno sin compromiso y te mostramos cómo la automatización y la robótica pueden mejorar tu operación desde el primer mes.</p>
-        <p style="margin:10px 0 0"><a class="btn" href="mailto:info.processap@gmail.com">Escríbenos</a></p>
-        <p class="small" style="margin-top:8px">📞 +34 647 507 220 · ✉️ info.processap@gmail.com</p>
-      </div>
-      <div class="card" style="background:#fff">
-        <h4 style="margin-top:0">Datos de contacto</h4>
-        <p class="small" style="margin:6px 0">Processap — Tu partner en automatización</p>
-        <p class="small" style="margin:6px 0">Industria · Hoteles · Retail</p>
-        <div class="qr" aria-label="QR a www.processap.com" title="QR Processap (colócalo aquí si lo tienes)"></div>
-        <p class="small" style="margin:10px 0 0">www.processap.com</p>
+    <div class="cta-single">
+      <div class="card">
+        <h3>Solicitar estudio gratuito</h3>
+        <p>Analizamos tu entorno sin compromiso y te mostramos cómo la robótica puede mejorar tu operación desde el primer mes.</p>
+        <a class="btn" href="mailto:info.processap@gmail.com">Solicitar estudio gratuito</a>
+
+        <h4 style="margin-top:18px">Datos de contacto</h4>
+        <p class="small" style="margin:6px 0">📞 +34 647 507 220</p>
+        <p class="small" style="margin:6px 0">✉️ info.processap@gmail.com</p>
+        <p class="small" style="margin:6px 0">🌐 www.processap.com</p>
       </div>
     </div>
   </section>
@@ -192,7 +155,6 @@
 <footer>
   <div class="wrap">
     <div>© <span id="y"></span> Processap. Todos los derechos reservados.</div>
-    <div class="small">Automatización industrial y robótica aplicada a hoteles, restaurantes, supermercados y grandes superficies.</div>
   </div>
 </footer>
 
