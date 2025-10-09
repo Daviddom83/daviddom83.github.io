@@ -4,9 +4,215 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Processap – Automatización Industrial y Robótica para Hoteles y Comercios</title>
+  <meta name="description" content="Processap: tu partner en automatización industrial y robótica aplicada a hoteles, restaurantes, supermercados y grandes superficies." />
+  <meta name="theme-color" content="#1E4D8C" />
+  <style>
+    :root{
+      --azul:#1E4D8C; --gris:#333; --gris-claro:#E8EBF1; --bg:#fff; --max:1100px;
+      --shadow:0 10px 30px rgba(0,0,0,.06); --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--gris);background:var(--bg);line-height:1.55}
+    a{color:var(--azul);text-decoration:none}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #f1f1f1;z-index:50}
+    .nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{display:flex;gap:10px;align-items:center}
+    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--azul),#5da1ff)}
+    .brand h1{font-size:18px;margin:0;color:#111}
+    .menu{display:flex;gap:18px;align-items:center}
+    .menu a{font-weight:600;color:#222}
+    .btn{display:inline-block;background:var(--azul);color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;box-shadow:var(--shadow)}
+    .hero{background:linear-gradient(180deg,#f7faff,transparent);padding:56px 20px}
+    .wrap{max-width:var(--max);margin:auto}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+    .badge{display:inline-block;background:#eef4ff;color:var(--azul);padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.4px}
+    .hero h2{font-size:40px;line-height:1.1;margin:12px 0 10px}
+    .hero p{font-size:18px;margin:0 0 22px}
+    .card{background:#fff;border:1px solid #f1f1f1;border-radius:var(--radius);box-shadow:var(--shadow);padding:20px}
+    .img-hero{aspect-ratio:16/10;background:linear-gradient(135deg,#dfeafc,#f3f7ff);border-radius:var(--radius);position:relative;overflow:hidden}
+    .img-hero::after{content:"";position:absolute;inset:0;background:
+      radial-gradient(1200px 400px at 100% 100%,rgba(30,77,140,.15),transparent 60%);}
+    .grid{display:grid;gap:20px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    h3{margin:0 0 10px;font-size:24px}
+    h4{margin:0 0 8px;font-size:18px}
+    .pill{display:inline-block;background:#f5f7fb;padding:6px 10px;border-radius:999px;font-weight:600;font-size:12px}
+    ul{margin:10px 0 0 18px}
+    section{padding:56px 20px}
+    .feat{display:flex;gap:14px;align-items:flex-start}
+    .ico{width:38px;height:38px;border-radius:10px;background:#eef4ff;display:grid;place-items:center;color:var(--azul);font-weight:900}
+    .cta{background:linear-gradient(180deg,#f7faff,#eef4ff)}
+    footer{background:#0d1c34;color:#e8eef8}
+    footer .wrap{display:grid;gap:10px;padding:28px 20px}
+    .small{font-size:13px;color:#667}
+    .cta-box{display:grid;gap:18px;grid-template-columns:1.2fr .8fr;align-items:center}
+    .qr{aspect-ratio:1;background:#fff;border-radius:12px;border:1px solid #eaeaea}
+    /* responsive */
+    @media (max-width:900px){
+      .hero-grid,.grid-3,.grid-2,.cta-box{grid-template-columns:1fr}
+      .menu{display:none}
+    }
+  </style>
 </head>
 <body>
-  <h1>Processap – Automatización Industrial y Robótica para Hoteles y Comercios</h1>
-  <p>Versión completa de la web actualizada. Sustituye este contenido con el HTML detallado provisto en la conversación.</p>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <h1>Processap</h1>
+    </div>
+    <nav class="menu" aria-label="Principal">
+      <a href="#que-hacemos">Qué hacemos</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#soluciones">Soluciones</a>
+      <a href="#contacto" class="btn">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="badge">Tu partner en automatización</span>
+        <h2>Automatización industrial y robótica para hoteles y comercios</h2>
+        <p>Eficiencia, innovación y servicio las 24 horas. Integración real de robots de servicio y limpieza con soporte local.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="#contacto">Solicitar demostración</a>
+          <a class="pill" href="#soluciones">Ver soluciones</a>
+        </div>
+      </div>
+      <div class="img-hero card" role="img" aria-label="Robot de servicio entregando pedido en un hotel"></div>
+    </div>
+  </section>
+
+  <!-- QUÉ HACEMOS -->
+  <section id="que-hacemos">
+    <div class="wrap grid grid-2">
+      <div class="card">
+        <h3>Qué hacemos</h3>
+        <p>En Processap diseñamos e integramos soluciones de <strong>automatización industrial</strong> y <strong>robótica aplicada</strong> a entornos reales: hoteles, restaurantes, supermercados y grandes superficies.</p>
+        <div class="grid grid-2" style="margin-top:12px">
+          <div class="feat">
+            <div class="ico">⚙️</div>
+            <div>
+              <h4>Automatización industrial</h4>
+              <p class="small">PLCs, robots, sensórica, HMI/SCADA e integración de líneas.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="ico">🤖</div>
+            <div>
+              <h4>Robótica para hoteles y retail</h4>
+              <p class="small">Robots de servicio, reparto, guía/recepción y limpieza autónoma.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="ico">🧩</div>
+            <div>
+              <h4>Integración llave en mano</h4>
+              <p class="small">Estudio, instalación, configuración y formación a tu equipo.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="ico">🛠️</div>
+            <div>
+              <h4>Soporte local</h4>
+              <p class="small">Mantenimiento y asistencia técnica cercana y ágil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="background:linear-gradient(180deg,#f9fbff,#fff)">
+        <h3>Valor para tu negocio</h3>
+        <ul>
+          <li>Reducción de costes operativos y tiempos de servicio.</li>
+          <li>Disponibilidad 24/7 con calidad constante.</li>
+          <li>Imagen moderna que sorprende al cliente.</li>
+          <li>Integración con ascensores, cerraduras y sistemas internos.</li>
+        </ul>
+        <p class="small" style="margin-top:12px">La robótica no sustituye la hospitalidad, <strong>la eleva</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTORES -->
+  <section id="sectores">
+    <div class="wrap">
+      <h3 style="margin-bottom:18px">Sectores</h3>
+      <div class="grid grid-3">
+        <div class="card">
+          <h4>Industria</h4>
+          <p>Líneas automatizadas, control de procesos, trazabilidad, seguridad y mantenimiento predictivo.</p>
+        </div>
+        <div class="card">
+          <h4>Hoteles y Restauración</h4>
+          <p>Room service autónomo, runners, guía/recepción multilingüe e integración con operaciones nocturnas.</p>
+        </div>
+        <div class="card">
+          <h4>Retail y Grandes Superficies</h4>
+          <p>Robots de limpieza y soporte logístico que trabajan incluso a oscuras para ahorrar energía nocturna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUCIONES -->
+  <section id="soluciones" style="background:linear-gradient(180deg,#f7faff,transparent)">
+    <div class="wrap grid grid-2">
+      <div class="card">
+        <h3>Soluciones destacadas</h3>
+        <ul>
+          <li><strong>Robot de servicio a habitaciones</strong> – entregas autónomas 24/7 (amenities, toallas, room service).</li>
+          <li><strong>Robot camarero/runner</strong> – apoyo en desayunos, restaurantes y eventos.</li>
+          <li><strong>Robot guía/recepción</strong> – bienvenida e información en varios idiomas.</li>
+          <li><strong>Robot de limpieza autónoma</strong> – fregado/aspirado constante; <em>pueden trabajar a oscuras</em> para reducir consumo.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Beneficios medibles</h3>
+        <ul>
+          <li>Hasta <strong>60 %</strong> de ahorro en costes de limpieza (escenarios nocturnos).</li>
+          <li>ROI estimado en <strong>12–18 meses</strong> según uso y turnos.</li>
+          <li>Calidad homogénea y trazabilidad de tareas.</li>
+          <li>Seguridad y reducción de riesgos laborales.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contacto" class="cta">
+    <div class="wrap card cta-box">
+      <div>
+        <h3>Solicita una demostración</h3>
+        <p>Analizamos tu entorno sin compromiso y te mostramos cómo la automatización y la robótica pueden mejorar tu operación desde el primer mes.</p>
+        <p style="margin:16px 0 0"><a class="btn" href="mailto:info.processap@gmail.com">Escríbenos</a></p>
+        <p class="small" style="margin-top:10px">📞 +34 647 507 220 · ✉️ info.processap@gmail.com</p>
+      </div>
+      <div class="card" style="background:#fff">
+        <h4 style="margin-top:0">Datos de contacto</h4>
+        <p class="small" style="margin:6px 0">Processap — Tu partner en automatización</p>
+        <p class="small" style="margin:6px 0">Industria · Hoteles · Retail</p>
+        <div class="qr" aria-label="QR a www.processap.com" title="QR Processap (colócalo aquí si lo tienes)"></div>
+        <p class="small" style="margin:10px 0 0">www.processap.com</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="y"></span> Processap. Todos los derechos reservados.</div>
+    <div class="small">Automatización industrial y robótica aplicada a hoteles, restaurantes, supermercados y grandes superficies.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
