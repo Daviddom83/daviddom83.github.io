@@ -8,32 +8,27 @@
   <meta name="theme-color" content="#1E4D8C" />
   <style>
     :root{
-      --azul:#1E4D8C; --gris:#222; --gris-claro:#E8EBF1; --bg:#fff;
-      --max:1100px; --radius:16px; --shadow:0 8px 26px rgba(0,0,0,.06);
+      --azul:#1E4D8C; --gris:#222; --bg:#fff; --max:1100px;
+      --radius:16px; --shadow:0 8px 26px rgba(0,0,0,.08);
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--gris);background:var(--bg);line-height:1.55;font-size:17px}
     a{color:var(--azul);text-decoration:none}
-    img{max-width:100%;display:block}
+    img{max-width:100%;height:auto;display:block}
+    .img-soft{border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #eef1f6;background:#f4f6f9}
     header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eef1f6;z-index:50}
     .nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
-    .brand{display:flex;gap:12px;align-items:center}
     .brand img{height:42px;width:auto;object-fit:contain}
-    .brand h1{font-size:20px;margin:0;color:#0b2d63;font-weight:800;letter-spacing:.3px}
     .menu{display:flex;gap:18px;align-items:center}
     .btn{display:inline-block;background:var(--azul);color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;box-shadow:var(--shadow)}
     .wrap{max-width:var(--max);margin:auto}
     .hero{background:linear-gradient(180deg,#f7faff,transparent);padding:36px 18px}
     .hero h2{font-size:40px;margin:6px 0 8px;color:#0b2d63}
     .sub{color:#2b3551;margin:0 0 12px}
-    .pill{display:inline-block;background:#eef4ff;color:var(--azul);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:.2px}
     section{padding:36px 18px}
     .grid{display:grid;gap:16px}
     .grid-2{grid-template-columns:repeat(2,1fr)}
     .card{background:#fff;border:1px solid #eef1f6;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
-    .img{aspect-ratio:16/10;background:linear-gradient(135deg,#dfeafc,#f3f7ff);position:relative}
-    .img::after{content:"";position:absolute;inset:0;background:
-      radial-gradient(1000px 380px at 100% 100%,rgba(30,77,140,.14),transparent 60%)}
     .pad{padding:18px}
     h3{margin:0 0 8px;font-size:28px;color:#0b2d63}
     h4{margin:0 0 6px;font-size:20px;color:#10223d}
@@ -51,9 +46,9 @@
 <header>
   <div class="nav">
     <div class="brand">
+      <!-- LOGO SOLO -->
       <img src="logo-processap.jpg" alt="Processap logo"
            onerror="this.onerror=null;this.src='logo-processap';" />
-      <h1>Processap</h1>
     </div>
     <nav class="menu" aria-label="Principal">
       <a href="index.html">Inicio</a>
@@ -70,19 +65,18 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <span class="pill">Catálogo</span>
       <h2>Robots para hoteles, restaurantes y retail</h2>
       <p class="sub">Selección e integración de robots de servicio, guía y limpieza. <strong>Soporte local</strong> y puesta en marcha llave en mano.</p>
     </div>
   </section>
 
-  <!-- CARDS -->
+  <!-- SERVICIO & RUNNER -->
   <section id="servicio">
     <div class="wrap">
-      <h3>Servicio a habitaciones</h3>
+      <h3>Servicio a habitaciones y Runner</h3>
       <div class="grid grid-2">
         <article class="card">
-          <div class="img" role="img" aria-label="Robot de servicio a habitaciones (imagen de referencia)"></div>
+          <img class="img-soft" src="robot-servicio.jpg" alt="Robot de servicio a habitaciones" />
           <div class="pad">
             <h4>Robot de Room Service</h4>
             <p>Entrega autónoma de amenities, toallas y pedidos con navegación segura y avisos al huésped.</p>
@@ -105,7 +99,7 @@
         </article>
 
         <article class="card" id="runner">
-          <div class="img" role="img" aria-label="Robot camarero / runner (imagen de referencia)"></div>
+          <img class="img-soft" src="robot-runner.jpg" alt="Robot camarero / runner en restaurante" />
           <div class="pad">
             <h4>Robot Camarero / Runner</h4>
             <p>Soporte en desayuno, restaurante o eventos. Reduce tiempos y mejora la atención del personal.</p>
@@ -130,12 +124,13 @@
     </div>
   </section>
 
+  <!-- RECEPCIÓN & LIMPIEZA -->
   <section id="recepcion">
     <div class="wrap">
-      <h3>Guía / Recepción</h3>
+      <h3>Guía / Recepción y Limpieza</h3>
       <div class="grid grid-2">
         <article class="card">
-          <div class="img" role="img" aria-label="Robot guía o recepcionista (imagen de referencia)"></div>
+          <img class="img-soft" src="robot-recepcion.jpg" alt="Robot guía / recepcionista en lobby" />
           <div class="pad">
             <h4>Robot Guía & Recepción</h4>
             <p>Bienvenida, orientación y FAQs en varios idiomas. Imagen tecnológica y experiencia diferencial.</p>
@@ -158,7 +153,7 @@
         </article>
 
         <article class="card" id="limpieza">
-          <div class="img" role="img" aria-label="Robot de limpieza autónoma (imagen de referencia)"></div>
+          <img class="img-soft" src="robot-limpieza.jpg" alt="Robot de limpieza autónoma" />
           <div class="pad">
             <h4>Robot de Limpieza Autónoma</h4>
             <p>Fregado y/o aspirado continuo. <strong>Pueden trabajar a oscuras</strong> para ahorrar energía nocturna.</p>
