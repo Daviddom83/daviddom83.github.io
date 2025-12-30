@@ -2,198 +2,129 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Processap – Automatización Industrial y Robótica para Hoteles y Comercios</title>
-  <meta name="description" content="Robótica y automatización para hoteles, comercios e industria. Soporte local y soluciones inteligentes en Málaga y toda España." />
-  <meta name="theme-color" content="#1E4D8C" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Robots de servicio y limpieza para hoteles y retail | Processap Málaga</title>
+  <meta name="description" content="Processap integra robots de servicio (camareros, runners, carga, delivery) y robots de limpieza para hoteles, supermercados y grandes superficies. Sede en Málaga, servicio en Andalucía y toda España." />
+
+  <meta name="robots" content="index,follow" />
+  <meta http-equiv="content-language" content="es" />
+  <link rel="canonical" href="https://processap.com/" />
 
   <!-- Open Graph -->
+  <meta property="og:title" content="Processap | Robots de servicio y limpieza en Andalucía" />
+  <meta property="og:description" content="Sede en Málaga. Integramos robots de servicio y robots de limpieza para hoteles, supermercados y grandes superficies. Servicio en Andalucía y toda España." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Processap – Soluciones en Robótica y Automatización" />
-  <meta property="og:description" content="Robótica y automatización para hoteles, comercios e industria. Soporte local y soluciones inteligentes." />
-  <meta property="og:url" content="https://www.processap.com/" />
-  <meta property="og:image" content="https://www.processap.com/robot-hero.jpg" />
-  <meta property="og:image:alt" content="Robot de servicio en entorno hotelero" />
+  <meta property="og:url" content="https://processap.com/" />
+  <meta property="og:image" content="https://processap.com/logo-processap_Negativo.jpg" />
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Processap – Soluciones en Robótica y Automatización" />
-  <meta name="twitter:description" content="Robótica y automatización para hoteles, comercios e industria. Soporte local y soluciones inteligentes." />
-  <meta name="twitter:image" content="https://www.processap.com/robot-hero.jpg" />
+  <meta name="twitter:title" content="Processap | Robots de servicio y limpieza en Andalucía" />
+  <meta name="twitter:description" content="Robots de servicio y limpieza para hoteles y retail. Sede en Málaga, servicio en toda España." />
 
-  <style>
-    :root{
-      --azul:#1E4D8C; --gris:#222; --bg:#fff; --max:1100px;
-      --shadow:0 8px 26px rgba(0,0,0,.08); --radius:16px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--gris);background:var(--bg);line-height:1.55;font-size:17px}
-    a{color:var(--azul);text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
-    .img-soft{border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #eef1f6;background:#f4f6f9}
+  <!-- Datos estructurados (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Processap",
+    "url": "https://processap.com/",
+    "telephone": "+34 647 507 220",
+    "email": "admin@processap.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Málaga",
+      "addressRegion": "Andalucía",
+      "addressCountry": "ES"
+    },
+    "areaServed": ["Málaga", "Andalucía", "España"],
+    "description": "Integración de robots de servicio (camareros, runners, delivery, carga) y robots de limpieza para hoteles, supermercados y grandes superficies. Sede en Málaga y servicio en toda España."
+  }
+  </script>
 
-    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eef1f6;z-index:50}
-    .nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
-    .brand img{height:42px;width:auto;object-fit:contain}
-    .menu{display:flex;gap:18px;align-items:center}
-
-    .btn{display:inline-block;background:var(--azul);color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;box-shadow:var(--shadow)}
-    .btn-sec{display:inline-block;border:2px solid var(--azul);color:var(--azul);padding:11px 16px;border-radius:12px;font-weight:800;box-shadow:var(--shadow);background:#f4f8ff}
-    .btn-sec:hover{background:#eaf2ff}
-    .pill{display:inline-block;background:#eef4ff;color:var(--azul);padding:6px 10px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:.2px}
-
-    .wrap{max-width:var(--max);margin:auto}
-    .hero{background:#fff;padding:32px 18px}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:center}
-    .hero h2{font-size:44px;line-height:1.08;margin:10px 0;letter-spacing:-.5px;color:#0b2d63}
-    .hero p{font-size:18px;margin:0 0 16px;color:#2b3551}
-
-    .card{background:#fff;border:1px solid #eef1f6;border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
-    section{padding:36px 18px}
-    h3{margin:0 0 10px;font-size:28px;color:#0b2d63}
-    h4{margin:0 0 6px;font-size:20px;color:#10223d}
-    .grid{display:grid;gap:16px}
-    .grid-3{grid-template-columns:repeat(3,1fr)}
-    .grid-2{grid-template-columns:repeat(2,1fr)}
-    ul{margin:10px 0 0 18px}
-    .small{font-size:14px;color:#4c5670}
-
-    .cta{background:linear-gradient(180deg,#f7faff,#eef4ff)}
-    .cta-single{max-width:var(--max);margin:auto;display:block}
-    footer{background:#0d1c34;color:#e8eef8}
-    footer .wrap{display:grid;gap:8px;padding:20px 18px}
-
-    #seo p{margin-bottom:14px;color:#2b3551}
-    #seo strong{color:#0b2d63}
-
-    @media (max-width:980px){
-      body{font-size:16.5px}
-      .hero-grid,.grid-3,.grid-2{grid-template-columns:1fr}
-      .menu{display:none}
-      .hero h2{font-size:36px}
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<header>
-  <div class="nav">
-    <div class="brand">
-      <img src="logo-processap.jpg?v=2" alt="Processap logo" />
-    </div>
-    <nav class="menu" aria-label="Principal">
-      <a href="#que-hacemos">Qué hacemos</a>
-      <a href="#sectores">Sectores</a>
-      <a href="robots.html">Robots</a>
-      <a href="#contacto" class="btn">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-<main>
   <!-- HERO -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="pill">Tu partner en automatización</span>
-        <h2>Automatización industrial y robótica para hoteles y comercios</h2>
-        <p>Eficiencia, innovación y servicio las 24 horas. Integración real de robots de servicio y limpieza con soporte local.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn" href="#contacto">Solicitar estudio gratuito</a>
-          <a class="btn-sec" href="robots.html">Ver robots</a>
-        </div>
-      </div>
-      <figure>
-        <img class="img-soft" src="robot-hero.jpg?v=2" alt="Robot en entorno hotelero" />
-      </figure>
+    <div class="container">
+      <img src="logo-processap_Negativo.jpg" alt="Processap robots de servicio y limpieza en Málaga" class="logo-hero" />
+
+      <h1>Robots de servicio y robots de limpieza para hoteles y retail</h1>
+
+      <h2>Automatización real para hoteles, supermercados y grandes superficies</h2>
+
+      <p>
+        En Processap integramos robots de servicio (camareros, runners, delivery y carga)
+        y robots de limpieza autónomos para optimizar la operativa diaria en hoteles,
+        supermercados y grandes superficies. Sede en Málaga, con servicio en Andalucía y toda España.
+      </p>
+
+      <a href="https://wa.me/34647507220?text=Hola%20Processap%2C%20estoy%20interesado%20en%20robots%20de%20servicio%20y%2Fo%20robots%20de%20limpieza%20para%20mi%20negocio.%20%C2%BFPodemos%20hablar%3F"
+         class="btn-primary" target="_blank" rel="noopener">
+        Hablar por WhatsApp
+      </a>
     </div>
   </section>
 
-  <!-- QUÉ HACEMOS -->
-  <section id="que-hacemos">
-    <div class="wrap grid grid-2">
-      <div class="card">
-        <h3>Qué hacemos</h3>
-        <p>Diseñamos e integramos <strong>automatización industrial</strong> y <strong>robótica aplicada</strong> a hoteles, restaurantes, supermercados y grandes superficies.</p>
-        <ul>
-          <li>Automatización de procesos con PLCs, sensores y SCADA.</li>
-          <li>Integración de robots de servicio y limpieza autónoma.</li>
-          <li>Soluciones llave en mano con soporte local.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Valor para tu negocio</h3>
-        <ul>
-          <li>Reducción de costes y tiempos de servicio.</li>
-          <li>Disponibilidad 24/7 y mejora de experiencia del cliente.</li>
-          <li>Imagen moderna que atrae nuevos huéspedes.</li>
-        </ul>
-        <p class="small">La robótica no sustituye la hospitalidad, <strong>la eleva</strong>.</p>
-      </div>
-    </div>
-  </section>
+  <!-- BLOQUE SERVICIOS -->
+  <section class="services">
+    <div class="container">
+      <h2>Soluciones de robótica adaptadas a tu negocio</h2>
 
-  <!-- SECTORES -->
-  <section id="sectores">
-    <div class="wrap">
-      <h3>Sectores</h3>
-      <div class="grid grid-3">
-        <div class="card">
-          <h4>Industria</h4>
-          <p>Automatización de procesos, control y mantenimiento predictivo.</p>
-        </div>
-        <div class="card">
-          <h4>Hoteles y Restauración</h4>
-          <p>Room service autónomo, runners, guía/recepción e integración con ascensores.</p>
-        </div>
-        <div class="card">
-          <h4>Retail y Superficies</h4>
-          <p>Robots de limpieza y apoyo logístico, incluso en modo nocturno sin luz.</p>
-        </div>
-      </div>
+      <p>
+        Analizamos tu operativa y te proponemos la solución de robótica más adecuada,
+        encargándonos de la integración completa, puesta en marcha y soporte técnico.
+      </p>
+
+      <ul>
+        <li><strong>Robots de servicio:</strong> camareros, runners, robots de carga y delivery autónomo.</li>
+        <li><strong>Robots de limpieza:</strong> limpieza autónoma de grandes superficies, supermercados y hoteles.</li>
+        <li><strong>Integración completa:</strong> instalación, configuración, formación y soporte.</li>
+      </ul>
+
+      <p>
+        <a href="robots.html">Ver catálogo de robots y soluciones disponibles</a>
+      </p>
     </div>
   </section>
 
   <!-- BLOQUE SEO LOCAL -->
-  <section id="seo">
-    <div class="wrap">
-      <h3>Integradores de robótica y automatización en Málaga</h3>
+  <section class="seo-local">
+    <div class="container">
+      <h2>Especialistas en robótica para hoteles y comercios en Andalucía</h2>
+
       <p>
-        En <strong>Processap</strong> somos especialistas en <strong>automatización industrial</strong> y <strong>robótica aplicada</strong> para hoteles, comercios y grandes superficies. Ayudamos a nuestros clientes a mejorar la eficiencia, reducir costes y ofrecer una experiencia moderna y tecnológica a sus usuarios.
-      </p>
-      <p>
-        Desde nuestra sede en <strong>Málaga</strong>, colaboramos con fabricantes líderes como Pudu Robotics, Keenon y OrionStar para ofrecer <strong>robots de servicio</strong> adaptados a cada entorno: robots camareros, runners, guías, de entrega o limpieza autónoma.
-      </p>
-      <p>
-        Nuestro equipo técnico analiza cada proyecto, selecciona el modelo óptimo y se encarga de la instalación, configuración y mantenimiento. 
-        Si busca <strong>robots para hoteles en Málaga</strong>, <strong>automatización industrial</strong> o <strong>asesoría en integración de sistemas inteligentes</strong>, Processap es su partner de confianza.
+        Desde nuestra sede en Málaga, en Processap trabajamos con hoteles,
+        restaurantes, supermercados y grandes superficies de toda Andalucía
+        (Costa del Sol, Sevilla, Cádiz, Granada) y ofrecemos servicio técnico
+        y soporte a nivel nacional.
       </p>
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="cta">
-    <div class="cta-single">
-      <div class="card">
-        <h3>Solicitar estudio gratuito</h3>
-        <p>Analizamos tu entorno sin compromiso y te mostramos cómo la robótica puede mejorar tu operación desde el primer mes.</p>
-        <a class="btn" href="mailto:admin@processap.com">Solicitar estudio gratuito</a>
+  <section class="contact">
+    <div class="container">
+      <h2>¿Hablamos de tu proyecto?</h2>
+      <p>Contacta con nosotros y analizamos cómo la robótica puede mejorar tu operativa.</p>
 
-        <h4 style="margin-top:18px">Datos de contacto</h4>
-        <p class="small" style="margin:6px 0">📞 +34 647 507 220</p>
-        <p class="small" style="margin:6px 0">✉️ admin@processap.com</p>
-        <p class="small" style="margin:6px 0">🌐 www.processap.com</p>
-      </div>
+      <a href="https://wa.me/34647507220"
+         class="btn-secondary" target="_blank" rel="noopener">
+        Contactar por WhatsApp
+      </a>
     </div>
   </section>
-</main>
 
-<footer>
-  <div class="wrap">
-    <div>© <span id="y"></span> Processap. Todos los derechos reservados.</div>
-  </div>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© Processap · Robots de servicio y limpieza · Málaga · Andalucía · España</p>
+    </div>
+  </footer>
 
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
