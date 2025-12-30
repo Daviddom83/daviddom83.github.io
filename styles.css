@@ -70,23 +70,22 @@ h2{
 }
 
 /* Imagen hero */
+/* Hero image estándar (HOME, estética) */
 .hero-image{
   margin-top:16px;
   width:100%;
-  height:320px;              /* altura fija controlada */
-  object-fit:contain;        /* 👈 clave: NO recorta */
+  max-height:320px;
+  object-fit:cover;          /* 👈 vuelve a cover */
   object-position:center;
-  background:#f7f9fc;        /* fondo neutro elegante */
   border-radius:var(--radius);
   border:1px solid var(--line);
   box-shadow:var(--shadow);
 }
 
 @media (max-width:720px){
-  .hero-image{
-    height:220px;
-  }
+  .hero-image{max-height:220px;}
 }
+
 
 
 
