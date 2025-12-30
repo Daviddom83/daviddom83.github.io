@@ -34,43 +34,93 @@
       --shadow:0 8px 26px rgba(0,0,0,.08);
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--gris);background:var(--bg);line-height:1.55;font-size:17px}
-    a{text-decoration:none}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--gris);
+      background:var(--bg);
+      line-height:1.55;
+      font-size:17px
+    }
+    a{text-decoration:none;color:var(--azul)}
     img{max-width:100%;height:auto;display:block}
 
     .wrap{max-width:var(--max);margin:auto}
     header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eef1f6;z-index:50}
-    .nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
+    .nav{
+      max-width:var(--max);
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 18px
+    }
     .brand img{height:42px}
-    .menu{display:flex;gap:18px;align-items:center}
+
+    .menu{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
 
     .btn{
       display:inline-block;
-      padding:12px 18px;
+      padding:10px 16px;
       border-radius:12px;
       font-weight:800;
       box-shadow:var(--shadow);
       color:#fff;
+      background:var(--azul);
+      white-space:nowrap;
     }
     .btn-wa{background:var(--wa)}
     .btn-mail{background:var(--azul)}
 
-    .img-soft{border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #eef1f6}
+    .img-soft{
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      border:1px solid #eef1f6
+    }
     .img-card{max-height:280px;margin:10px auto}
 
     section{padding:36px 18px}
-    h3{font-size:28px;color:#0b2d63}
+    h3{font-size:28px;color:#0b2d63;margin-top:0}
     h4{font-size:20px;color:#10223d}
+
     .grid{display:grid;gap:16px}
     .grid-2{grid-template-columns:repeat(2,1fr)}
-    .card{background:#fff;border:1px solid #eef1f6;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+    .card{
+      background:#fff;
+      border:1px solid #eef1f6;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow)
+    }
     .pad{padding:18px}
-    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px
+    }
 
-    .seo-note{background:#f7faff}
-    footer{background:#0d1c34;color:#e8eef8;padding:20px 18px;text-align:center}
+    footer{
+      background:#0d1c34;
+      color:#e8eef8;
+      padding:20px 18px;
+      text-align:center
+    }
 
-    @media(max-width:980px){.grid-2{grid-template-columns:1fr}.menu{display:none}}
+    /* MÓVIL */
+    @media(max-width:980px){
+      .grid-2{grid-template-columns:1fr}
+      .menu{
+        gap:10px;
+      }
+      .menu a{
+        font-weight:700;
+      }
+    }
   </style>
 </head>
 
@@ -93,7 +143,6 @@
 <section>
   <div class="wrap grid grid-2">
 
-    <!-- ROOM SERVICE -->
     <div class="card">
       <img class="img-soft img-card" src="robot-servicio.jpg" alt="">
       <div class="pad">
@@ -106,7 +155,6 @@
       </div>
     </div>
 
-    <!-- RUNNER -->
     <div class="card">
       <img class="img-soft img-card" src="robot-runner.jpg" alt="">
       <div class="pad">
@@ -119,7 +167,6 @@
       </div>
     </div>
 
-    <!-- RECEPCIÓN -->
     <div class="card">
       <img class="img-soft img-card" src="robot-recepcion.jpg" alt="">
       <div class="pad">
@@ -132,7 +179,6 @@
       </div>
     </div>
 
-    <!-- LIMPIEZA -->
     <div class="card">
       <img class="img-soft img-card" src="robot-limpieza.jpg" alt="">
       <div class="pad">
@@ -153,6 +199,9 @@
 <footer>
   © <span id="y"></span> Processap
 </footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
