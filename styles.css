@@ -72,11 +72,17 @@ h2{
 .hero-image{
   margin-top:16px;
   width:100%;
-  height:auto;
+  max-height:320px;   /* ajusta: 280–360 según te guste */
+  object-fit:cover;   /* recorta arriba/abajo sin deformar */
+  object-position:center;
   border-radius:var(--radius);
   border:1px solid var(--line);
   box-shadow:var(--shadow);
 }
+@media (max-width:720px){
+  .hero-image{max-height:220px;}
+}
+
 
 /* Filas de acciones */
 .hero-actions{margin-top:18px}
