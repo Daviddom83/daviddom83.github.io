@@ -73,19 +73,21 @@ h2{
 .hero-image{
   margin-top:16px;
   width:100%;
-  max-height:320px;
-  object-fit:cover;
-  object-position:center 30%; /* 👈 clave: sube el foco */
+  height:320px;              /* altura fija controlada */
+  object-fit:contain;        /* 👈 clave: NO recorta */
+  object-position:center;
+  background:#f7f9fc;        /* fondo neutro elegante */
   border-radius:var(--radius);
   border:1px solid var(--line);
   box-shadow:var(--shadow);
 }
+
 @media (max-width:720px){
   .hero-image{
-    max-height:220px;
-    object-position:center 35%;
+    height:220px;
   }
 }
+
 
 
 /* Acciones */
