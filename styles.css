@@ -1,3 +1,4 @@
+
 :root{
   --bg:#ffffff;
   --text:#101828;
@@ -29,7 +30,7 @@ a:hover{text-decoration:underline}
   padding:28px 18px;
 }
 
-/* HERO (limpio, sin imagen de fondo; la imagen va en <img class="hero-image">) */
+/* HERO */
 .hero{
   padding:0;
   background:#fff;
@@ -68,12 +69,12 @@ h2{
   font-size:17px;
 }
 
-/* Imagen hero visible y bonita */
+/* Imagen hero */
 .hero-image{
   margin-top:16px;
   width:100%;
-  max-height:320px;   /* ajusta: 280–360 según te guste */
-  object-fit:cover;   /* recorta arriba/abajo sin deformar */
+  max-height:320px;
+  object-fit:cover;
   object-position:center;
   border-radius:var(--radius);
   border:1px solid var(--line);
@@ -83,8 +84,7 @@ h2{
   .hero-image{max-height:220px;}
 }
 
-
-/* Filas de acciones */
+/* Acciones */
 .hero-actions{margin-top:18px}
 .actions-row{
   margin-top:14px;
@@ -94,7 +94,7 @@ h2{
   align-items:center;
 }
 
-/* Botones base */
+/* Botones */
 .btn-primary, .btn-secondary, .btn-wa, .btn-mail{
   display:inline-flex;
   align-items:center;
@@ -112,38 +112,28 @@ h2{
 .btn-wa:hover,
 .btn-mail:hover{filter:brightness(0.98);text-decoration:none}
 
-/* Botón azul (genérico) */
 .btn-primary{
   background:var(--accent);
   color:#fff;
 }
-
-/* Botón borde (secundario) */
 .btn-secondary{
   background:#fff;
   color:var(--accent);
   border-color:var(--line);
 }
-
-/* WhatsApp verde (siempre) */
 .btn-wa{
   background:var(--wa);
   color:#fff;
-  border-color:transparent;
 }
-
-/* Email azul (siempre) */
 .btn-mail{
   background:var(--accent);
   color:#fff;
-  border-color:transparent;
 }
 
-/* Secciones en tarjetas limpias */
+/* Secciones */
 .services, .seo-local, .contact{
   padding:22px 0;
 }
-
 .services .container, .seo-local .container, .contact .container{
   background:var(--card);
   border:1px solid var(--line);
@@ -156,11 +146,9 @@ h2{
   margin:0 0 10px;
   color:var(--text);
 }
-
 .services p, .seo-local p, .contact p{
   color:var(--muted);
 }
-
 .services ul{
   margin:12px 0 0;
   padding-left:18px;
@@ -168,14 +156,13 @@ h2{
 }
 .services li{margin:6px 0}
 
-/* Bloque datos contacto */
+/* Contacto */
 .contact-details{
   margin-top:14px;
   color:var(--muted);
   font-size:15px;
 }
 .contact-details p{margin:6px 0}
-.contact-details a{color:var(--accent)}
 
 /* Footer */
 footer{
@@ -185,6 +172,47 @@ footer{
   font-size:14px;
   border-top:1px solid var(--line);
   margin-top:10px;
+}
+
+/* WhatsApp flotante */
+.wa-float{
+  position:fixed;
+  right:18px;
+  bottom:22px;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 14px;
+  border-radius:999px;
+  background:var(--wa);
+  color:#fff;
+  font-weight:900;
+  text-decoration:none;
+  box-shadow:0 14px 34px rgba(16,24,40,.18);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.wa-float:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 40px rgba(16,24,40,.22);
+  text-decoration:none;
+}
+.wa-float .wa-ico{
+  font-size:18px;
+  line-height:1;
+}
+.wa-float small{
+  font-weight:800;
+}
+
+/* Móvil: solo icono */
+@media (max-width:720px){
+  .wa-float{
+    padding:14px;
+    gap:0;
+    bottom:18px;
+  }
+  .wa-float small{display:none;}
 }
 
 /* Responsive */

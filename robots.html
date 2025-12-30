@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -111,15 +112,41 @@
       text-align:center
     }
 
+    /* WhatsApp flotante */
+    .wa-float{
+      position:fixed;
+      right:18px;
+      bottom:22px;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:999px;
+      background:var(--wa);
+      color:#fff;
+      font-weight:900;
+      box-shadow:0 14px 34px rgba(16,24,40,.18);
+      text-decoration:none;
+    }
+    .wa-float:hover{filter:brightness(.98)}
+    .wa-float .wa-ico{font-size:18px}
+    .wa-float small{font-weight:800}
+
+    @media (max-width:720px){
+      .wa-float{
+        padding:14px;
+        gap:0;
+        bottom:18px;
+      }
+      .wa-float small{display:none;}
+    }
+
     /* MÓVIL */
     @media(max-width:980px){
       .grid-2{grid-template-columns:1fr}
-      .menu{
-        gap:10px;
-      }
-      .menu a{
-        font-weight:700;
-      }
+      .menu{gap:10px}
+      .menu a{font-weight:700}
     }
   </style>
 </head>
@@ -199,6 +226,16 @@
 <footer>
   © <span id="y"></span> Processap
 </footer>
+
+<!-- WhatsApp flotante -->
+<a class="wa-float"
+   href="https://wa.me/34647507220?text=Hola%20Processap%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20robots%20de%20servicio%20y%2Fo%20robots%20de%20limpieza.%20Estoy%20interesado%20en%20una%20soluci%C3%B3n%20para%20mi%20negocio."
+   target="_blank" rel="noopener"
+   aria-label="Contactar por WhatsApp">
+  <span class="wa-ico">💬</span>
+  <small>WhatsApp</small>
+</a>
+
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
 </script>
