@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Robots de limpieza industrial y soluciones PUDU desde 425€/mes | Processap Málaga</title>
-  <meta name="description" content="Processap integra robots de limpieza industrial, fregadoras autónomas y soluciones PUDU para transporte y servicio. Especialistas en PUDU CC1, MT1, BG1 y SH1. Sede en Málaga y servicio en toda España." />
+  <title>Robots de limpieza industrial y soluciones PUDU | Processap Málaga</title>
+  <meta name="description" content="Processap integra robots de limpieza industrial, fregadoras autónomas y soluciones PUDU para transporte y servicio. Especialistas en PUDU CC1, MT1 y SH1. Sede en Málaga y servicio en toda España." />
 
   <meta name="robots" content="index,follow" />
   <meta http-equiv="content-language" content="es" />
@@ -343,9 +343,57 @@
 
       .wa-float small{display:none;}
     }
+/* Estilos para el botón de la TIENDA (Redondeado) */
+    .btn-shop {
+      background: #ff6600 !important;
+      color: #fff !important;
+      border-radius: 99px !important;
+      padding: 10px 22px !important;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none !important;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-shop:hover {
+      transform: scale(1.05);
+      background: #e65c00 !important;
+    }
+
+    /* Botón flotante de la TIENDA */
+    .shop-float {
+      position: fixed;
+      right: 18px;
+      bottom: 85px; 
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 99px;
+      background: #ff6600;
+      color: #fff;
+      font-weight: 700;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+
+    /* Ajuste móvil para el flotante */
+    @media (max-width:720px){
+      .shop-float {
+        padding: 14px;
+        gap: 0;
+        bottom: 80px;
+      }
+      .shop-float small { display: none; }
+    }
   </style>
 </head>
-
+<a class="shop-float" href="https://www.processap.store" target="_blank">
+  
+  <small>Tienda Online</small>
+</a>
 <body>
 
 <header>
@@ -356,9 +404,10 @@
       </a>
     </div>
 
-    <nav class="menu">
+   <nav class="menu">
       <a href="/" class="btn btn-light">Inicio</a>
       <a href="/robots-limpieza-hoteles.html" class="menu-link">Limpieza</a>
+      <a href="https://www.processap.store" class="btn btn-shop" target="_blank">Tienda Online</a>
       <a href="#contacto" class="btn btn-wa">Contacto</a>
     </nav>
   </div>
@@ -369,7 +418,7 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1>Robots de limpieza industrial y soluciones autónomas para empresas desde 425€/mes</h1>
+        <h1>Robots de limpieza industrial y soluciones autónomas para empresas</h1>
         <p class="lead">
           En Processap damos prioridad a la automatización de la limpieza profesional con robots PUDU,
           especialmente en hoteles, supermercados, hospitales, industria y grandes superficies.
@@ -406,7 +455,7 @@
 
   <section>
     <div class="wrap section-box">
-      <h2>Prioridad en limpieza profesional con PUDU CC1, MT1, BG1 y SH1</h2>
+      <h2>Prioridad en limpieza profesional con PUDU CC1, MT1 y SH1</h2>
       <p class="section-intro">
         Esta página resume las soluciones que más sentido tienen hoy para Processap.
         Damos prioridad a los robots de limpieza porque son los que suelen generar
@@ -433,7 +482,6 @@
           </p>
           <ul class="bullets">
             <li>Barrido, fregado, aspirado y secado</li>
-            <li>¡Limpia 1000m2 por hora!</li>
             <li>Ideal para limpieza profesional diaria</li>
             <li>Menor dependencia de operario</li>
             <li>Muy potente para retail, hospitality y edificios públicos</li>
@@ -462,21 +510,22 @@
       </article>
 
       <article class="card">
-        <img class="product-img" src="robot-cc1-3.jpg" alt="El mayor de la familia">
+        <img class="product-img" src="robot-cc1-3.jpg" alt="Interior del robot PUDU CC1">
         <div class="pad">
           <span class="tag">Autonomía y tecnología</span>
-          <h3>PUDU BG1 (La Potencia Industrial) - NUEVO</h3>
+          <h3>CC1 con estación, autonomía operativa y enfoque profesional</h3>
           <p>
-            El <strong>BG1</strong> El gigante de la gama diseñado para el trabajo pesado. Con mayor capacidad de depósitos y tecnología de navegación avanzada, el BG1 es el aliado perfecto para naves logísticas, parkings y grandes superficies industriales que requieren una limpieza constante 24/7.
+            El <strong>CC1</strong> destaca por ofrecer una propuesta mucho más avanzada que una máquina fregasuelos
+            convencional. Su planteamiento está pensado para una limpieza repetitiva, programable y con menor intervención.
           </p>
           <p>
-            Es una solución ideal para empresas que buscan una alternativa para poder limpiar las grandes superficies.
+            Es una solución ideal para empresas que buscan una alternativa más moderna frente a la
+            limpieza manual o a la fregadora tradicional con operario dedicado.
           </p>
           <ul class="bullets">
-            <li>IA integrada</li>
             <li>Operativa más autónoma</li>
             <li>Solución técnica de nivel profesional</li>
-            <li>Limpia  mas de 2000m2 por hora</li>
+            <li>Mayor valor percibido para el cliente final</li>
             <li>Muy buena opción para proyectos con enfoque ROI</li>
           </ul>
         </div>
@@ -505,10 +554,10 @@
       </article>
 
       <article class="card">
-        <img class="product-img" src="robot-sh1-2.jpg" alt="Aplicaciones del PUDU SH1 en hostelería y espacios pequeños por 90€/mes">
+        <img class="product-img" src="robot-sh1-2.jpg" alt="Aplicaciones del PUDU SH1 en hostelería y espacios pequeños">
         <div class="pad">
           <span class="tag">Compacto y versátil</span>
-          <h3>PUDU SH1 desde 90€/mes</h3>
+          <h3>PUDU SH1</h3>
           <p>
             La <strong>PUDU SH1</strong> es una fregadora profesional compacta pensada para bares,
             restaurantes, cafeterías, comercios y espacios pequeños o medianos con suciedad diaria.
