@@ -293,28 +293,80 @@ header {
   text-decoration: none;
 }
 
-/* BOTÓN FLOTANTE DE TIENDA (Encima de WhatsApp) */
+/* --- ESTILOS UNIFICADOS (ESTILO ROBOTS.HTML) --- */
+
+/* Botón de la Tienda en el Menú Superior */
+.btn-shop {
+  background: #ff6600 !important;
+  color: #fff !important;
+  border-radius: 99px !important;
+  padding: 12px 24px !important; /* Un poco más grande como en robots */
+  font-weight: 700 !important;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none !important;
+  transition: transform 0.2s ease;
+  font-size: 15px;
+}
+
+.btn-shop:hover {
+  transform: scale(1.05);
+  background: #e65c00 !important;
+}
+
+/* Botón Flotante de la TIENDA (Naranja - ARRIBA) */
 .shop-float {
   position: fixed;
   right: 18px;
-  bottom: 85px; /* Ajustado para que no tape al de WhatsApp */
+  bottom: 95px; /* Altura para que quede por encima del de WhatsApp */
   z-index: 9999;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 14px;
-  border-radius: 999px;
+  padding: 12px 18px;
+  border-radius: 99px;
   background: #ff6600;
   color: #fff;
-  font-weight: 900;
-  box-shadow: 0 14px 34px rgba(16,24,40,.18);
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   text-decoration: none;
-  transition: transform .15s ease;
+  transition: 0.3s;
 }
 
-.shop-float:hover {
-  transform: translateY(-2px);
+/* Botón Flotante de WHATSAPP (Verde - ABAJO) */
+/* Aseguramos que tenga esta clase en todas las páginas */
+.wa-float {
+  position: fixed;
+  right: 18px;
+  bottom: 22px; /* Pegado abajo */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 99px;
+  background: #25D366;
   color: #fff;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.shop-float:hover, .wa-float:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Ajuste para móviles: ocultamos el texto y dejamos solo el icono si la pantalla es pequeña */
+@media (max-width: 720px) {
+  .shop-float, .wa-float {
+    padding: 14px;
+    gap: 0;
+  }
+  .shop-float small, .wa-float small {
+    display: none;
+  }
 }
 
 /* Ajuste para móvil del botón de tienda */
