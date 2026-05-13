@@ -276,10 +276,21 @@ header {
   padding: 8px 4px;
 }
 
-/* Botón TIENDA en el menú */
+/* Botón TIENDA en el menú (Redondeado) */
 .btn-shop {
-  background: #ff6600 !important; /* Naranja para destacar */
+  background: #ff6600 !important;
   color: #fff !important;
+  border-radius: 99px; /* Esto redondea los cantos por completo */
+  padding: 10px 22px;  /* Ajustamos el espacio interno para que se vea más equilibrado */
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.btn-shop:hover {
+  transform: scale(1.05); /* Un pequeño efecto al pasar el ratón */
+  text-decoration: none;
 }
 
 /* BOTÓN FLOTANTE DE TIENDA (Encima de WhatsApp) */
