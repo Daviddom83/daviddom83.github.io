@@ -241,3 +241,77 @@ footer{
   h1{font-size:30px}
   .hero .container{padding:34px 18px 22px}
 }
+
+/* --- NUEVOS ESTILOS GLOBALES PARA EL HEADER --- */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  z-index: 1000;
+}
+
+.nav {
+  max-width: var(--max);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+}
+
+.brand img { height: 44px; }
+
+.menu {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-link {
+  font-weight: 700;
+  color: var(--accent);
+  padding: 8px 4px;
+}
+
+/* Botón TIENDA en el menú */
+.btn-shop {
+  background: #ff6600 !important; /* Naranja para destacar */
+  color: #fff !important;
+}
+
+/* BOTÓN FLOTANTE DE TIENDA (Encima de WhatsApp) */
+.shop-float {
+  position: fixed;
+  right: 18px;
+  bottom: 85px; /* Ajustado para que no tape al de WhatsApp */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 999px;
+  background: #ff6600;
+  color: #fff;
+  font-weight: 900;
+  box-shadow: 0 14px 34px rgba(16,24,40,.18);
+  text-decoration: none;
+  transition: transform .15s ease;
+}
+
+.shop-float:hover {
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* Ajuste para móvil del botón de tienda */
+@media (max-width:720px){
+  .shop-float {
+    padding: 14px;
+    gap: 0;
+    bottom: 80px;
+  }
+  .shop-float small { display: none; }
+}
