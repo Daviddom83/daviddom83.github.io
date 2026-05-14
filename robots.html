@@ -295,26 +295,7 @@
       margin-top:10px;
     }
 
-    .wa-float{
-      position:fixed;
-      right:18px;
-      bottom:22px;
-      z-index:9999;
-      display:flex;
-      align-items:center;
-      gap:10px;
-      padding:12px 14px;
-      border-radius:999px;
-      background:var(--wa);
-      color:#fff;
-      font-weight:900;
-      box-shadow:0 14px 34px rgba(16,24,40,.18);
-      text-decoration:none;
-    }
-
-    .wa-float:hover{filter:brightness(.98)}
-    .wa-float .wa-ico{font-size:18px}
-    .wa-float small{font-weight:800}
+    
 
     @media (max-width:980px){
       .hero-grid,
@@ -335,14 +316,7 @@
         justify-content:flex-end;
       }
 
-      .wa-float{
-        padding:14px;
-        gap:0;
-        bottom:18px;
-      }
-
-      .wa-float small{display:none;}
-    }
+      
 /* Estilos para el botón de la TIENDA (Redondeado) */
     .btn-shop {
       background: #ff6600 !important;
@@ -361,39 +335,12 @@
       background: #e65c00 !important;
     }
 
-    /* Botón flotante de la TIENDA */
-    .shop-float {
-      position: fixed;
-      right: 18px;
-      bottom: 85px; 
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 18px;
-      border-radius: 99px;
-      background: #ff6600;
-      color: #fff;
-      font-weight: 700;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      text-decoration: none;
-    }
+   
 
-    /* Ajuste móvil para el flotante */
-    @media (max-width:720px){
-      .shop-float {
-        padding: 14px;
-        gap: 0;
-        bottom: 80px;
-      }
-      .shop-float small { display: none; }
-    }
+  
   </style>
 </head>
-<a class="shop-float" href="https://www.processap.store" target="_blank">
-  
-  <small>Tienda Online</small>
-</a>
+
 <body>
 
 <header>
@@ -628,13 +575,7 @@
   © <span id="y"></span> Processap · Robots de limpieza industrial y automatización inteligente
 </footer>
 
-<a class="wa-float"
-   href="https://wa.me/34647507220?text=Hola%20Processap%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20robots%20de%20limpieza%20y%20otras%20soluciones%20PUDU."
-   target="_blank" rel="noopener"
-   aria-label="Contactar por WhatsApp">
-  <span class="wa-ico">💬</span>
-  <small>WhatsApp</small>
-</a>
+
 
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
