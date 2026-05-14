@@ -195,46 +195,10 @@ footer{
   margin-top:10px;
 }
 
-/* WhatsApp flotante */
-.wa-float{
-  position:fixed;
-  right:18px;
-  bottom:22px;
-  z-index:9999;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:12px 14px;
-  border-radius:999px;
-  background:var(--wa);
-  color:#fff;
-  font-weight:900;
-  text-decoration:none;
-  box-shadow:0 14px 34px rgba(16,24,40,.18);
-  transition:transform .15s ease, box-shadow .15s ease;
-}
-.wa-float:hover{
-  transform:translateY(-2px);
-  box-shadow:0 18px 40px rgba(16,24,40,.22);
-  text-decoration:none;
-}
-.wa-float .wa-ico{
-  font-size:18px;
-  line-height:1;
-}
-.wa-float small{
-  font-weight:800;
 }
 
-/* Móvil: solo icono */
-@media (max-width:720px){
-  .wa-float{
-    padding:14px;
-    gap:0;
-    bottom:18px;
-  }
-  .wa-float small{display:none;}
-}
+
+
 
 /* Responsive */
 @media (max-width:720px){
@@ -314,67 +278,10 @@ header {
   background: #e65c00 !important;
 }
 
-/* Botón Flotante de la TIENDA (Naranja - ARRIBA) */
-.shop-float {
-  position: fixed;
-  right: 18px;
-  bottom: 95px; /* Altura para que quede por encima del de WhatsApp */
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 18px;
-  border-radius: 99px;
-  background: #ff6600;
-  color: #fff;
-  font-weight: 700;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  text-decoration: none;
-  transition: 0.3s;
-}
 
-/* Botón Flotante de WHATSAPP (Verde - ABAJO) */
-/* Aseguramos que tenga esta clase en todas las páginas */
-.wa-float {
-  position: fixed;
-  right: 18px;
-  bottom: 22px; /* Pegado abajo */
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 18px;
-  border-radius: 99px;
-  background: #25D366;
-  color: #fff;
-  font-weight: 700;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  text-decoration: none;
-  transition: 0.3s;
-}
 
-.shop-float:hover, .wa-float:hover {
-  transform: scale(1.05);
-  color: #fff;
-}
 
-/* Ajuste para móviles: ocultamos el texto y dejamos solo el icono si la pantalla es pequeña */
-@media (max-width: 720px) {
-  .shop-float, .wa-float {
-    padding: 14px;
-    gap: 0;
-  }
-  .shop-float small, .wa-float small {
-    display: none;
-  }
-}
 
-/* Ajuste para móvil del botón de tienda */
-@media (max-width:720px){
-  .shop-float {
-    padding: 14px;
-    gap: 0;
-    bottom: 80px;
-  }
-  .shop-float small { display: none; }
-}
+
+
+
