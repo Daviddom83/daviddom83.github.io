@@ -277,7 +277,35 @@ header {
   transform: scale(1.05);
   background: #e65c00 !important;
 }
+/* ===== DOBLE IMAGEN HERO ===== */
 
+.hero-images{
+  display:flex;
+  gap:24px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.hero-images img{
+  flex:1;
+  min-width:280px;
+  max-width:520px;
+}
+
+/* Mobile */
+@media (max-width:720px){
+
+  .hero-images{
+    gap:16px;
+  }
+
+  .hero-images img{
+    min-width:100%;
+  }
+
+}
 
 
 
