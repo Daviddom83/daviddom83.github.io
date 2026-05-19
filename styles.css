@@ -307,7 +307,11 @@ header {
 
 }
 
-
+/* --- TRUCO PARA OCULTAR EL BOTÓN DE CONTACTO EN TODAS LAS CABECERAS --- */
+.menu a[href*="contact"], 
+.menu a[href*="contacto"] {
+    display: none !important;
+}
 
 
 
