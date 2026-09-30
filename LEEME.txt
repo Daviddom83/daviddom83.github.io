@@ -1,0 +1,39 @@
+NUEVA WEB PROCESSAP · v1 (30 sept 2026)
+======================================
+
+QUÉ HAY EN ESTA CARPETA
+- 11 páginas .html (portada, fichas de robots, hoteles, fregadora industrial, aviso legal y privacidad)
+- robots.html: redirige la dirección antigua al catálogo nuevo
+- sitemap.xml y robots.txt: para Google
+- img/ (45 imágenes) y video/ (3 vídeos)
+
+CÓMO SUBIRLA A GITHUB (desde el navegador, Chrome o Edge)
+1. Entra en https://github.com/Daviddom83/daviddom83.github.io
+2. Pulsa "Add file" → "Upload files".
+3. Abre esta carpeta en tu ordenador, selecciona TODO su contenido
+   (los .html, sitemap.xml, robots.txt y las carpetas img y video)
+   y arrástralo a la ventana de GitHub. Ojo: arrastra el contenido, no la carpeta "processap-web".
+4. Espera a que terminen de subir todos los archivos (los vídeos tardan un poco).
+5. Abajo, en "Commit changes": escribe "Nueva web v1", deja marcado
+   "Commit directly to the main branch" y pulsa "Commit changes".
+6. Espera 1-2 minutos y abre https://processap.com (si ves la web antigua, pulsa Ctrl+F5).
+
+NO BORRES
+- El archivo CNAME (conecta tu dominio processap.com).
+- La carpeta contacto/ (tu tarjeta digital).
+
+OPCIONAL (cuando la web nueva ya funcione)
+- Puedes borrar los archivos viejos que ya no se usan: styles.css, sitemap.xml.txt,
+  MT1_VAC.png, logo-processap.jpg, pudu-gama-completa.jpg y todos los robot-*.jpg.
+
+SI ALGO SALE MAL
+- En GitHub: pestaña "Commits" → abre "Nueva web v1" → botón "Revert". Vuelve la web antigua.
+
+PENDIENTE PARA QUE LLEGUEN LOS CONTACTOS
+- Crear la clave gratuita en https://web3forms.com con admin@processap.com.
+- Pegarla en index.html, en la línea:  var WEB3FORMS_KEY = '';
+  (o pasársela a Claude y te devuelve el index.html ya preparado).
+- Mientras no esté la clave, la calculadora pide al cliente que envíe su resumen por WhatsApp.
+
+PENDIENTE LEGAL
+- Completar en aviso-legal.html los datos del Registro Mercantil (tomo, folio, hoja).
