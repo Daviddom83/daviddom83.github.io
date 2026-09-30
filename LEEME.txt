@@ -7,16 +7,14 @@ QUÉ HAY EN ESTA CARPETA
 - sitemap.xml y robots.txt: para Google
 - img/ (45 imágenes) y video/ (3 vídeos)
 
-CÓMO SUBIRLA A GITHUB (desde el navegador, Chrome o Edge)
+CÓMO SUBIRLA A GITHUB (versión sin carpetas)
 1. Entra en https://github.com/Daviddom83/daviddom83.github.io
-2. Pulsa "Add file" → "Upload files".
-3. Abre esta carpeta en tu ordenador, selecciona TODO su contenido
-   (los .html, sitemap.xml, robots.txt y las carpetas img y video)
-   y arrástralo a la ventana de GitHub. Ojo: arrastra el contenido, no la carpeta "processap-web".
-4. Espera a que terminen de subir todos los archivos (los vídeos tardan un poco).
-5. Abajo, en "Commit changes": escribe "Nueva web v1", deja marcado
-   "Commit directly to the main branch" y pulsa "Commit changes".
-6. Espera 1-2 minutos y abre https://processap.com (si ves la web antigua, pulsa Ctrl+F5).
+2. Pulsa "Add file" → "Upload files" → "choose your files".
+3. Entra en esta carpeta, pulsa Ctrl+A para seleccionar TODOS los archivos y pulsa Abrir.
+   (Son 59 archivos: páginas .html, imágenes .webp/.jpg/.png, vídeos .mp4, sitemap y robots.)
+4. Espera a que terminen de subir todos (los vídeos tardan un poco).
+5. Abajo: "Commit directly to the main branch" → "Commit changes".
+6. Espera 1-2 minutos y abre https://processap.com con Ctrl+F5.
 
 NO BORRES
 - El archivo CNAME (conecta tu dominio processap.com).
@@ -29,11 +27,8 @@ OPCIONAL (cuando la web nueva ya funcione)
 SI ALGO SALE MAL
 - En GitHub: pestaña "Commits" → abre "Nueva web v1" → botón "Revert". Vuelve la web antigua.
 
-PENDIENTE PARA QUE LLEGUEN LOS CONTACTOS
-- Crear la clave gratuita en https://web3forms.com con admin@processap.com.
-- Pegarla en index.html, en la línea:  var WEB3FORMS_KEY = '';
-  (o pasársela a Claude y te devuelve el index.html ya preparado).
-- Mientras no esté la clave, la calculadora pide al cliente que envíe su resumen por WhatsApp.
+FORMULARIO
+- Ya conectado a Web3Forms: las solicitudes de la calculadora llegan a admin@processap.com.
 
 PENDIENTE LEGAL
 - Completar en aviso-legal.html los datos del Registro Mercantil (tomo, folio, hoja).
